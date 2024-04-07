@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Cat's Deck - Contacto</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styleMy.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html"><img
+                    src="assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-warning" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrito
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5"
+        style="background-image: url(assets/DisneyLorcana.jpg);  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        <div class="gridC">
+            <div class="gridH">
+                <h1 class="display-4 fw-bolder lorcana">¿QUIERES COMPARTIR LA NOTICIA?</h1>
+                <p class="lead fw-normal text-white mb-0">Si trabaja para alguna entidad de medios de comunicación
+                    tradicionales o digitales y necesita más información sobre Disney Lorcana o diversos activos,
+                    póngase en contacto con ellos directamente en lorcanapress@ravensburger.com.</p>
+                <section class="formulario">
+                    <div class="form">
+                        <form method="post" action="submit_correo.php">
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" maxlength="100"
+                                    pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ]{3,100}"
+                                    title="Debe indicar su nombre correctamente" required>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fas fa-mobile-alt"></i>
+                                <label for="telefono">Teléfono</label>
+                                <input type="telefono" name="telefono" maxlength="10"
+                                    title="Debe indicar un telefono válido" required>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fas fa-at"></i>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="email" maxlength="100"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                    title="Debe indicar un correo válido" required>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fas fa-pen"></i>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" rows="10" maxlength="140" required></textarea>
+                            </div>
+
+                            <div class="btn-block btn-warning">
+                                <button class="btn" type="submit" value="Enviar"><i
+                                        class="fas fa-paper-plane"></i>ENVIAR</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <!-- <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+
+                    </div>
+                </div>
+            </div>
+            
+        </section> -->
+    <a href="https://wa.me/526568046829" class="float">
+        <i class="fi fi-brands-whatsapp float"></i>
+        <img src="assets/whatsapp.svg" class="img-w" alt="">
+    </a>
+    <!-- Footer-->
+    <footer class="py-5 bg-blue">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Sitio web de estudiante 2024<br>Ismael Antonio Díaz
+                Carrillo<br>208797</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Tu lógica para mostrar una notificación o mensaje de confirmación aquí.
+            alert('¡Correo electrónico enviado con éxito!');
+            // Luego, puedes redirigir al usuario manualmente o dejar que el formulario lo haga.
+            window.location.href = 'correo_enviado.html';
+        });
+    </script>
+</body>
+
+</html>
